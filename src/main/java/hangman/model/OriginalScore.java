@@ -16,6 +16,7 @@ public class OriginalScore implements GameScore{
             return 0;
         }else{
             return puntaje - 10 * incorrectCount;
+
         }
     }
 }

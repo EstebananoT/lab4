@@ -18,6 +18,7 @@ public class BonusScore implements GameScore{
             return puntaje;
         }else{
             return 0;
+
         }
 
     }
