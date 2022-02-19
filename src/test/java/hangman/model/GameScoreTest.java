@@ -13,14 +13,20 @@ public class GameScoreTest {
      * 2. Valores Incorrectos: Valores negativos para cualquier parámetro
      * 3. Valores :Retornos menores a 0
      */
-    private OriginalScore o;
+    private OriginalScore score;
     @Test
     public void originalScoreTest() {
-        try{
-            System.out.println(o.calculateScore(4,7));
-            assertEquals(o.calculateScore(4,7) ,30);
-        }catch (Exception e){
-            System.out.println("SOUDAPUTA");
+        score = new OriginalScore();
+        int numero = 0;
+        try {
+            numero = score.calculateScore(10, 1);
+            Assert.assertEquals(90, numero);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
+    @Test
+    public void calculateScoreBonus(){
+
     }
 }

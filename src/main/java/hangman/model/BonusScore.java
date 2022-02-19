@@ -19,5 +19,6 @@ public class BonusScore implements GameScore{
         }else{
             return 0;
         }
+
     }
 }
