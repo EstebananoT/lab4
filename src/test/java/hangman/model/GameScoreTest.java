@@ -8,10 +8,10 @@ import static org.junit.Assert.assertEquals;
 public class GameScoreTest {
 
     /**
-     * Clases de equivalencia para OriginalScore
-     * 1. Valores Regulares: Retornos mayores o iguales a 0
-     * 2. Valores Incorrectos: Valores negativos para cualquier parámetro
-     * 3. Valores :Retornos menores a 0
+     * Clases de equivalencia 
+     * 1. Valores Regulares: Retornos mayores o iguales a 0.
+     * 2. Valores Negativos: Valores negativos para cualquier parámetro.
+     * 3. Valores Incorrectos: Retornos menores a 0.
      */
     private OriginalScore scoreO;
     @Test
@@ -25,6 +25,7 @@ public class GameScoreTest {
             e.printStackTrace();
         }
     }
+
 
     private BonusScore scoreB;
     @Test
