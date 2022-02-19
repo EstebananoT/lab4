@@ -8,7 +8,7 @@ import static org.junit.Assert.assertEquals;
 public class GameScoreTest {
 
     /**
-     * Clases de equivalencia 
+     * Clases de equivalencia
      * 1. Valores Regulares: Retornos mayores o iguales a 0.
      * 2. Valores Negativos: Valores negativos para cualquier parámetro.
      * 3. Valores Incorrectos: Retornos menores a 0.
@@ -19,6 +19,9 @@ public class GameScoreTest {
         scoreO = new OriginalScore();
         int numero = 0;
         try {
+            numero = scoreO.calculateScore(10, 11);
+            Assert.assertEquals(0, numero);
+
             numero = scoreO.calculateScore(10, 1);
             Assert.assertEquals(90, numero);
         } catch (Exception e) {
